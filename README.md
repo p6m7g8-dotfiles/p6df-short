@@ -1,10 +1,10 @@
-# p6df-teleport
+# p6df-short
 
 ## Table of Contents
 
 
-### p6df-teleport
-- [p6df-teleport](#p6df-teleport)
+### p6df-short
+- [p6df-short](#p6df-short)
   - [Badges](#badges)
   - [Distributions](#distributions)
   - [Summary](#summary)
@@ -17,12 +17,12 @@
 ### Badges
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/p6m7g8/p6df-teleport)
-[![Mergify](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/p6m7g8/p6df-teleport/&style=flat)](https://mergify.io)
-[![codecov](https://codecov.io/gh/p6m7g8/p6df-teleport/branch/master/graph/badge.svg?token=14Yj1fZbew)](https://codecov.io/gh/p6m7g8/p6df-teleport)
-[![Known Vulnerabilities](https://snyk.io/test/github/p6m7g8/p6df-teleport/badge.svg?targetFile=package.json)](https://snyk.io/test/github/p6m7g8/p6df-teleport?targetFile=package.json)
-[![Gihub repo dependents](https://badgen.net/github/dependents-repo/p6m7g8/p6df-teleport)](https://github.com/p6m7g8/p6df-teleport/network/dependents?dependent_type=REPOSITORY)
-[![Gihub package dependents](https://badgen.net/github/dependents-pkg/p6m7g8/p6df-teleport)](https://github.com/p6m7g8/p6df-teleport/network/dependents?dependent_type=PACKAGE)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/p6m7g8/p6df-short)
+[![Mergify](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/p6m7g8/p6df-short/&style=flat)](https://mergify.io)
+[![codecov](https://codecov.io/gh/p6m7g8/p6df-short/branch/master/graph/badge.svg?token=14Yj1fZbew)](https://codecov.io/gh/p6m7g8/p6df-short)
+[![Known Vulnerabilities](https://snyk.io/test/github/p6m7g8/p6df-short/badge.svg?targetFile=package.json)](https://snyk.io/test/github/p6m7g8/p6df-short?targetFile=package.json)
+[![Gihub repo dependents](https://badgen.net/github/dependents-repo/p6m7g8/p6df-short)](https://github.com/p6m7g8/p6df-short/network/dependents?dependent_type=REPOSITORY)
+[![Gihub package dependents](https://badgen.net/github/dependents-pkg/p6m7g8/p6df-short)](https://github.com/p6m7g8/p6df-short/network/dependents?dependent_type=PACKAGE)
 
 ## Summary
 
@@ -40,15 +40,16 @@
 
 ## Usage
 
-### p6df-teleport:
+### p6df-short:
 
-#### p6df-teleport/init.zsh:
+#### p6df-short/init.zsh:
 
-- p6df::modules::teleport::deps()
-- p6df::modules::teleport::external::brews()
-- p6df::modules::teleport::init()
-- p6df::modules::teleport::prompt::line()
-- str str = p6_teleport_prompt_info()
+- p6_short_prompt_info()
+- p6df::modules::short::deps()
+- p6df::modules::short::init()
+- p6df::modules::short::langs()
+- p6df::modules::short::prompt::init()
+- p6df::modules::short::prompt::line()
 
 
 

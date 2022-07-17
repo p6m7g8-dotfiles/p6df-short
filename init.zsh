@@ -12,19 +12,40 @@ p6df::modules::short::deps() {
   )
 }
 
+######################################################################
+#<
+#
+# Function: p6df::modules::short::langs()
+#
+#>
+######################################################################
 p6df::modules::short::langs() {
 
   p6_js_npm_global_install "@shortcut-cli/shortcut-cli"
 }
 
+######################################################################
+#<
+#
+# Function: p6df::modules::short::init()
+#
+#>
+######################################################################
 p6df::modules::short::init() {
 
   p6df::modules::short::prompt::init
 }
 
+######################################################################
+#<
+#
+# Function: p6df::modules::short::prompt::init()
+#
+#>
+######################################################################
 p6df::modules::short::prompt::init() {
 
-  p6df::core::prompt::line::add "p6df::modules::short::prompt::line"
+#  p6df::core::prompt::line::add "p6df::modules::short::prompt::line"
 }
 
 ######################################################################
@@ -41,10 +62,7 @@ p6df::modules::short::prompt::line() {
 ######################################################################
 #<
 #
-# Function: str str = p6_short_prompt_info()
-#
-#  Returns:
-#	str - str
+# Function: p6_short_prompt_info()
 #
 #>
 ######################################################################
