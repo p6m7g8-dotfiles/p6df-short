@@ -44,12 +44,9 @@
 
 #### p6df-short/init.zsh:
 
-- p6_short_prompt_info()
 - p6df::modules::short::deps()
-- p6df::modules::short::init()
 - p6df::modules::short::langs()
-- p6df::modules::short::prompt::init()
-- p6df::modules::short::prompt::line()
+- str str = p6df::modules::short::prompt::line()
 
 
 

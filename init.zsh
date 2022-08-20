@@ -29,56 +29,20 @@ p6df::modules::short::langs() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::short::init()
-#
-#>
-######################################################################
-p6df::modules::short::init() {
-
-  p6df::modules::short::prompt::init
-
-  p6_return_void
-}
-
-######################################################################
-#<
-#
-# Function: p6df::modules::short::prompt::init()
-#
-#>
-######################################################################
-p6df::modules::short::prompt::init() {
-
-  p6df::core::prompt::line::add "p6df::modules::short::prompt::line"
-}
-
-######################################################################
-#<
-#
-# Function: p6df::modules::short::prompt::line()
-#
-#>
-######################################################################
-p6df::modules::short::prompt::line() {
-
-  p6_short_prompt_info
-}
-
-######################################################################
-#<
-#
-# Function: str str = p6_short_prompt_info()
+# Function: str str = p6df::modules::short::prompt::line()
 #
 #  Returns:
 #	str - str
 #
+#  Environment:	 P6_DFZ_SHORT_ID
 #>
 ######################################################################
-p6_short_prompt_info() {
+p6df::modules::short::prompt::line() {
 
   local str
-
-  str="short:\t\t  "
+  if ! p6_string_blank "$P6_DFZ_SHORT_ID"; then
+    str="short:\t\t  ticket: $P6_DFZ_SHORT_ID"
+  fi
 
   p6_return_str "$str"
 }
