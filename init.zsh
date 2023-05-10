@@ -46,3 +46,32 @@ p6df::modules::short::prompt::line() {
 
   p6_return_str "$str"
 }
+
+######################################################################
+#<
+#
+# Function: p6df::modules::short::vscodes()
+#
+#>
+######################################################################
+p6df::modules::short::vscodes() {
+
+  code --install-extension shortcut.shortcut
+
+  p6_return_void
+}
+
+######################################################################
+#<
+#
+# Function: p6df::modules::short::clones()
+#
+#  Environment:	 P6_DFZ_SRC_FOCUSED_DIR
+#>
+######################################################################
+p6df::modules::short::clones() {
+
+  p6_github_login_clone "shortcut" "$P6_DFZ_SRC_FOCUSED_DIR"
+
+  p6_return_void
+}
