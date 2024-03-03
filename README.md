@@ -44,8 +44,10 @@
 
 #### p6df-short/init.zsh:
 
+- p6df::modules::short::clones()
 - p6df::modules::short::deps()
 - p6df::modules::short::langs()
+- p6df::modules::short::vscodes()
 - str str = p6df::modules::short::prompt::line()
 
 
